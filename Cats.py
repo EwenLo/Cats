@@ -6,7 +6,7 @@ import os
 from PIL import Image, ImageTk
 extension =""
 params = {'p': '9431'}
-response = requests.get('https://api.thecatapi.com/v1/images/search?x-api-key=75cd8c8b-3148-49f7-a0b2-fe5a50789cab',
+response = requests.get('https://api.thecatapi.com/v1/images/search',
             params=params)
 CatResponse = response.json()
 print(CatResponse[0]["url"])
